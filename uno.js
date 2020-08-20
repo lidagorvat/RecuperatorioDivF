@@ -74,11 +74,19 @@ function mostrar()
 	alert("El promedio de las edades de los pacientes es de " + promedio);
 	console.log("El promedio de las edades de los pacientes es de " + promedio);
 	//c
-	alert("La mujer con mayor temperatura es " + mujermaxtemp + " con " + temperaturamax + " grados ");
-	console.log("La mujer con mayor temperatura es " + mujermaxtemp + " con " + temperaturamax + " grados ");
-	if(flagf=0)
+	if(flagf=1)
 	{
+		alert("La mujer con mayor temperatura es " + mujermaxtemp + " con " + temperaturamax + " grados ");
+		console.log("La mujer con mayor temperatura es " + mujermaxtemp + " con " + temperaturamax + " grados ");
+	}
+	else 
+	{
+		alert("No hay pacientes femeninos.");
 		console.log("No hay pacientes femeninos.");
 	}
+	
+	
+	
+	
 
 }
