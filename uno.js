@@ -55,14 +55,6 @@ function mostrar()
 			flagm=1
 			contadorm++;
 		}
-		if(flagf=0)
-		{
-			console.log("No hay pacientes femeninos ");
-		}
-		if(flagm=0)
-		{
-			console.log("No hay pacientes masculinos ");
-		}
 		
 		sumaedades+=edad;
 
@@ -84,5 +76,9 @@ function mostrar()
 	//c
 	alert("La mujer con mayor temperatura es " + mujermaxtemp + " con " + temperaturamax + " grados ");
 	console.log("La mujer con mayor temperatura es " + mujermaxtemp + " con " + temperaturamax + " grados ");
+	if(flagf=0)
+	{
+		console.log("No hay pacientes femeninos.");
+	}
 
 }
