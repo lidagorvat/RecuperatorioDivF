@@ -16,9 +16,9 @@ c)la marca del más liviano de los sólidos
   let preciocaroliquido=0;
   let marcacaraliquido;
   let flagliquido=0
-  let preciobaratosolido=0;
+  let pesolivianosolido=0;
   let flagsolido=0
-  let marcabaratasolido;
+  let marcalivianasolido;
 
   do 
   {
@@ -57,10 +57,10 @@ c)la marca del más liviano de los sólidos
       flagliquido = 1;
     }
 
-    else if((preciobaratosolido>precio || flagsolido == 0) && tipo == 'solido')
+    if((pesolivianosolido>peso || flagsolido == 0) && tipo =='solido')
     {
-      preciobaratosolido=precio;
-      marcabaratasolido=marca;
+      pesolivianosolido=peso;
+      marcalivianasolido=marca;
       flagsolido = 1;
     }
     respuesta=prompt("¿Quiere seguir agregando productos? (INGRESE 'SI' PARA CONTINUAR AGREGANDO PRODUCTOS) ").toLowerCase();
@@ -83,7 +83,7 @@ c)la marca del más liviano de los sólidos
    //c
    if (flagsolido==1)
    {
-   alert("La marca más barata de los sólidos es " + marcabaratasolido + " y cuesta " + preciobaratosolido);
+   alert("La marca más liviana de los sólidos es " + marcalivianasolido);
    }
    else
    {
