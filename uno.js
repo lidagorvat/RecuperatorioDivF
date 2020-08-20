@@ -43,7 +43,6 @@ function mostrar()
 		{
 			edad=parseInt(prompt("La edad ingresada no es válida. Inténtelo nuevamente ").toLowerCase());
 		}
-//REVISAR FLAGS
 		if(sexo=='f')
 		{
 			flagf=1
@@ -56,7 +55,11 @@ function mostrar()
 		}
 		if(flagf=0)
 		{
-			
+			console.log("No hay pacientes femeninos ");
+		}
+		if(flagm=0)
+		{
+			console.log("No hay pacientes masculinos ");
 		}
 		
 		sumaedades+=edad;
@@ -69,4 +72,6 @@ function mostrar()
 	//b
 	alert("El promedio de las edades de los pacientes es de " + promedio);
 	console.log("El promedio de las edades de los pacientes es de " + promedio);
+	//c
+
 }
