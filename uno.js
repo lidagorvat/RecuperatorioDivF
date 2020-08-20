@@ -74,7 +74,7 @@ function mostrar()
 	alert("El promedio de las edades de los pacientes es de " + promedio);
 	console.log("El promedio de las edades de los pacientes es de " + promedio);
 	//c
-	if(flagf=1)
+	if(flagf==1)
 	{
 		alert("La mujer con mayor temperatura es " + mujermaxtemp + " con " + temperaturamax + " grados ");
 		console.log("La mujer con mayor temperatura es " + mujermaxtemp + " con " + temperaturamax + " grados ");
