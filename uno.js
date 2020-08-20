@@ -13,6 +13,14 @@ function mostrar()
 	let temperatura;
 	let sexo;
 	let edad;
+	let contadorf=0;
+	let contadorm=0;
+	let sumaedades=0;
+	let promedio;
+
+	let flagf=0;
+	let flagm=0;
+
 
 	for(let i = 0; i < 5; i++)
 	{
@@ -35,5 +43,30 @@ function mostrar()
 		{
 			edad=parseInt(prompt("La edad ingresada no es válida. Inténtelo nuevamente ").toLowerCase());
 		}
+//REVISAR FLAGS
+		if(sexo=='f')
+		{
+			flagf=1
+			contadorf++;
+		}
+		if(sexo=='m')
+		{
+			flagm=1
+			contadorm++;
+		}
+		if(flagf=0)
+		{
+			
+		}
+		
+		sumaedades+=edad;
 	}
+	promedio=sumaedades/5;
+
+	//a
+	alert("La cantidad de pacientes femeninos es de " + contadorf + " y la cantidad de pacientes masculinos es de " + contadorm);
+	console.log("La cantidad de pacientes femeninos es de " + contadorf + " y la cantidad de pacientes masculinos es de " + contadorm);
+	//b
+	alert("El promedio de las edades de los pacientes es de " + promedio);
+	console.log("El promedio de las edades de los pacientes es de " + promedio);
 }
