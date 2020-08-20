@@ -36,7 +36,7 @@ function mostrar()
 
 	do 
 	{
-		nombre=prompt("Ingrese el nombre del pasajero").toLowerCase();
+		nombre=prompt("Ingrese el nombre del titular").toLowerCase();
 		while(!(isNaN(nombre)))
 		{
 			nombre=prompt("El nombre ingresado no es válido. Inténtelo nuevamente").toLowerCase();
