@@ -70,6 +70,7 @@ c)la marca del más liviano de los sólidos
 
    //a
    alert("El peso total de la compra es de " + sumapeso);
+   
    //b
    if(flagliquido==1)
    {

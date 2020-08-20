@@ -70,9 +70,11 @@ function mostrar()
 	//a
 	alert("La cantidad de pacientes femeninos es de " + contadorf + " y la cantidad de pacientes masculinos es de " + contadorm);
 	console.log("La cantidad de pacientes femeninos es de " + contadorf + " y la cantidad de pacientes masculinos es de " + contadorm);
+
 	//b
 	alert("El promedio de las edades de los pacientes es de " + promedio);
 	console.log("El promedio de las edades de los pacientes es de " + promedio);
+	
 	//c
 	if(flagf==1)
 	{
@@ -84,9 +86,4 @@ function mostrar()
 		alert("No hay pacientes femeninos.");
 		console.log("No hay pacientes femeninos.");
 	}
-	
-	
-	
-	
-
 }

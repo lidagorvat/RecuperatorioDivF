@@ -61,8 +61,6 @@ function mostrar()
 			cantpasajeros=parseInt(prompt("La cantidad ingresada no es válida. Inténtelo nuevamente ").toLowerCase());
 		}
 
-		
-
 		if(destino == 'bariloche') 
 		{
 			bariloche++;
@@ -91,8 +89,6 @@ function mostrar()
 
 	}while (respuesta == 'si');
 
-	
-	
 	if(bariloche>=salta && bariloche>=cataratas)
 	{
 		flagbariloche=1;
@@ -113,7 +109,6 @@ function mostrar()
 	sumaflags=flagbariloche + flagsalta + flagcataratas;
 
 	//a
-	
 	if(sumaflags==1)
 	{
 		if(flagbariloche==1)
@@ -166,7 +161,6 @@ function mostrar()
 	}
 	
 	 //b
-
 	 console.log("El nombre del titular que lleva más pasajeros es " + nombretitularmáspasajeros);
 	 alert("El nombre del titular que lleva más pasajeros es " + nombretitularmáspasajeros);
 
