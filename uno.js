@@ -17,6 +17,8 @@ function mostrar()
 	let contadorm=0;
 	let sumaedades=0;
 	let promedio;
+	let temperaturamax=0;
+	let mujermaxtemp=0;
 
 	let flagf=0;
 	let flagm=0;
@@ -63,6 +65,13 @@ function mostrar()
 		}
 		
 		sumaedades+=edad;
+
+		if(temperaturamax<temperatura && sexo=='f')
+		{
+			temperaturamax=temperatura;
+			mujermaxtemp=nombre;
+		}
+
 	}
 	promedio=sumaedades/5;
 
@@ -73,5 +82,7 @@ function mostrar()
 	alert("El promedio de las edades de los pacientes es de " + promedio);
 	console.log("El promedio de las edades de los pacientes es de " + promedio);
 	//c
+	alert("La mujer con mayor temperatura es " + mujermaxtemp + " con " + temperaturamax + " grados ");
+	console.log("La mujer con mayor temperatura es " + mujermaxtemp + " con " + temperaturamax + " grados ");
 
 }
